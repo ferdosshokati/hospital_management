@@ -7,6 +7,8 @@ class UI(QMainWindow):
     def __init__(self):
         super(UI, self).__init__()
         uic.loadUi('Hospital.ui', self)
+        self.load_patients()
+
         # Define Widgets
         # labels
         self.manage_label = self.findChild(QLabel, 'manage_label')
@@ -135,6 +137,7 @@ class UI(QMainWindow):
         finally:
             cursor.close()
             conn.close()
+            self.load_patients()
     def register_patients(self):
         self.load_patients()
         name = self.textEdit_name.toPlainText()
