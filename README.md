@@ -18,7 +18,10 @@ This is a simple desktop application for managing patient records using Python, 
 - PyQt5
 - Microsoft SQL Server
 - ODBC (pyodbc) for database connection
+![Main Hospital management Window](assets/main_window.PNG)
+``` bash
+pip install Pyqt5
 
-[Main Hospital management Window](assets/main_window.PNG)
+
 
 
